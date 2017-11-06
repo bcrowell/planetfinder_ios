@@ -243,7 +243,7 @@ namespace r3 {
 	void InitFilesystem() {
 		if ( FindDirectory( f_basePath, "base" ) == false ) {
 			Output( "exiting due to invalid %s: %s", f_basePath.Name().Str().c_str(), f_basePath.GetVal().c_str() ); 
-			exit( 1 );
+			//exit( 1 );
 		}
 		if ( f_cachePath.GetVal().size() > 0 ) {
 			MakeDirectory( f_cachePath.GetVal().c_str() );			

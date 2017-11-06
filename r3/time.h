@@ -89,7 +89,7 @@ namespace r3 {
 	
 	inline void SleepMilliseconds( int i ) {
 #ifdef __APPLE__
-		usleep( i * 1000 );
+		//usleep( i * 1000 );
 #elif _WIN32
 		Sleep( i );
 #endif
